@@ -83,22 +83,22 @@ export const Socials = [
     {
         name: "GitHub",
         src: "/gitwhite.png",
-        link: "https://github.com/Scar1109",
+        link: "https://github.com/ArunaluB",
     },
     {
         name: "Instagram",
         src: "/instagram.svg",
-        link: "https://www.instagram.com/kavee_dineth/",
+        link: "",
     },
     {
         name: "Linkedin",
         src: "/linkedin.png",
-        link: "https://www.linkedin.com/in/kaveendinethma/",
+        link: "https://www.linkedin.com/in/arunalu-bamunusinghe/",
     },
     {
         name: "Youtube",
         src: "/youtube.png",
-        link: "https://www.youtube.com/@kaveendinethma1109",
+        link: "https://www.youtube.com/@nanayakkarabamunusinghe",
     },
 ];
 
@@ -248,72 +248,4 @@ export const Other_skill = [
     },
 ];
 
-export const youtube = [
-    {
-        name: "Java Design Patterns",
-        description:
-            "A clear and concise explanation of the most important design patterns in Java, with past examples.",
-        tags: [
-            {
-                name: "java",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "eclipse",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "design patterns",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: "https://i.ibb.co/Pm5LZfB/Design-patterns.png",
-        live_link: "https://youtu.be/rLZZPgm3kZA?si=MVDcNErF_02RjETw",
-    },
-    {
-        name: "Better GitHub README",
-        description:
-            "A step-by-step guide to creating a better GitHub README for your profile, with examples and design assets.",
-        tags: [
-            {
-                name: "github",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "readme",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "scripting",
-                color: "blue-text-gradient ",
-            },
-        ],
-        image: "https://i.ibb.co/sFq7HJ8/Github-readme.png",
-        live_link: "https://www.youtube.com/watch?v=14G9PeuHgXs",
-    },
-    {
-        name: "Learn Unix pThreads",
-        description:
-            "A detailed explanation of Unix pThreads, with examples and a step-by-step guide to creating a simple project.",
-        tags: [
-            {
-                name: "linux",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "pThread",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "unix",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "c",
-                color: "green-text-gradient",
-            },
-        ],
-        image: "https://i.ibb.co/GWXY1wz/pthread.png",
-        live_link: "https://www.youtube.com/watch?v=McufNHgJbSA",
-    },
-];
+

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Backend_skill, Library_skill, Full_stack, Other_skill, Skill_data } from '../constants'
 import SkillDataProvider from "./SkillDataProvider";
