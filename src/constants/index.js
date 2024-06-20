@@ -274,3 +274,30 @@ export const experiences = [
     },
 
 ];
+
+export const testimonials = [
+    {
+        testimonial:
+            "I had the privilege of working with this outstanding individual on both academic and project fronts. He is an efficient, hardworking, and results-oriented team player. His dedication to his work, coupled with his exceptional attitude and qualities, consistently exceeds expectations. I highly recommend him for any critical projects.",
+        name: "Frank Cronemberg",
+        designation: "Technical Lead / Engineering Manager",
+        company: "Sysco Labs",
+        image: "/Frank.png",
+    },
+    {
+        testimonial:
+            "I got the opportunity to work with Arunalu in more than one university project, and his dedication and yearning for learning were absolutely amazing. He was quick to take on new challenges and displayed an equally positive attitude, learning complex topics at lightning speed that ultimately helped achieve the team’s goals.Arunalu had an outstanding attitude and worked over and beyond providing quality in every task we gave him. His great communication skills and willingness to accept other’s advice has seated him that he is a valuable asset of the teamI am confident that he will bring the same level of dedication and collaborative spirit to any future endeavors, and I highly recommend him.",
+        name: "Dulanga Wimalagunasekara",
+        designation: "Software Engineer II ",
+        company: "Arimac",
+        image: "/dulanga.png",
+    },
+    {
+        testimonial:
+            "I'm delighted to recommend Arunalu for his dedication and passion in software engineering. Throughout his studies, he has demonstrated a strong commitment to learning and excelling in the field. His dedication to mastering software engineering concepts and his enthusiasm for problem-solving make him a valuable asset to any team. I am confident that Arunalu will continue to thrive and contribute positively to any organization he joins",
+        name: "Hasindu Eshan",
+        designation: "Lecturer",
+        company: "Institute of Computer Engineering Technology (iCET) ",
+        image: "/hasindu.png",
+    },
+];
