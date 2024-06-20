@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+
+
 export const Skill_data = [
     {
         skill_name: "Html 5",
@@ -248,4 +251,26 @@ export const Other_skill = [
     },
 ];
 
+export const experiences = [
+    {
+        title: "Associate Software Engineer",
+        company_name: "CodeHub Pvt Ltd",
+        icon: "/codehub.png",
+        iconBg: "#383E56",
+        date: "Feb 2024 - Present",
+        points: [
+            " ",
+        ],
+    },
+    {
+        title: "Trainee Enginner - Fullstack",
+        company_name: "Institute of Computer Engineering Technology (iCET)",
+        icon: "/icet.png",
+        iconBg: "#E6DEDD",
+        date: "Feb 2024 - May 2024",
+        points: [
+            " ",
+        ],
+    },
 
+];
