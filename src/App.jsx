@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Navbar, StarsCanvas, Hero,  Skills,  Footer, Experience ,Feedbacks } from "./components";
+import { Navbar, StarsCanvas, Hero, Skills, Footer, Experience, Feedbacks, Works } from "./components";
 
 function App() {
     return (
@@ -13,7 +13,9 @@ function App() {
                 <Hero />
                 <Skills />
                 <Experience />
+                <Works />
                 <Feedbacks />
+
                 <Footer />
             </div>
         </>

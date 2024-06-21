@@ -286,7 +286,7 @@ export const testimonials = [
     },
     {
         testimonial:
-            "I got the opportunity to work with Arunalu in more than one university project, and his dedication and yearning for learning were absolutely amazing. He was quick to take on new challenges and displayed an equally positive attitude, learning complex topics at lightning speed that ultimately helped achieve the team’s goals.Arunalu had an outstanding attitude and worked over and beyond providing quality in every task we gave him. His great communication skills and willingness to accept other’s advice has seated him that he is a valuable asset of the teamI am confident that he will bring the same level of dedication and collaborative spirit to any future endeavors, and I highly recommend him.",
+            "Arunalu is highly dedicated and eager to learn, quickly mastering complex topics and contributing significantly to team success. He consistently delivers high-quality work, demonstrates excellent communication skills, and maintains a positive attitude. Arunalu is also open to advice and collaboration, making him a valuable team member..",
         name: "Dulanga Wimalagunasekara",
         designation: "Software Engineer II ",
         company: "Arimac",
@@ -299,5 +299,107 @@ export const testimonials = [
         designation: "Lecturer",
         company: "Institute of Computer Engineering Technology (iCET) ",
         image: "/hasindu.png",
+    },
+];
+
+export const projects = [
+    {
+        name: "Hospital Management System",
+        description:
+            "Introducing Solution, your comprehensive web portal designed exclusively for healthcare professionals and billers. Our innovative platform is meticulously crafted to streamline and automate the claims process, ensuring that healthcare providers receive maximum payments from insurance companies.",
+        tags: [
+            {
+                name: "reactjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Sprinboot",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: "/innobot.jpg",
+        source_code_link: "https://github.com/DulangaMW/Innobothealth-Access-Management-System.git/",
+    },
+    {
+        name: "Whether Appilication",
+        description:
+            "Web application that provides weather information of any city in the world.",
+        tags: [
+            {
+                name: "vanilla js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "HTML",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: "/whether.jpg",
+        source_code_link: "https://github.com/ArunaluB/Weather_application.git/",
+        live_link: "https://arunalub.github.io/Weather_application/",
+
+    },
+    {
+        name: "Car Out Game",
+        description:
+            " I used Kotlin to develop this fun where you can drive a car and avoid obstacles. Plus, I incorporated Shared Preferences for data storage, making the user experience seamless and personalized.",
+        tags: [
+            {
+                name: "Kotlin",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: "/Capture.jpg",
+        source_code_link: "https://github.com/ArunaluB/Kotlin_Mobile_LabExam03.git/",
+    },
+    {
+        name: "E-commerce Website",
+        description:
+            "This project is a full-stack e-commerce website that allows users to browse products, add them to the cart, and purchase them. It includes features such as product filtering, product search, and payment processing.",
+        tags: [
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "JavaScript",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: "/mos buger.jpg",
+        source_code_link: "https://github.com/ArunaluB/E-commerce-website.git/",
+    },
+    {
+        name: "POS system ",
+        description:
+            "This project is a scalable Point of Sale (POS) system developed with Java, JavaFX, and Hibernate, integrated with a MySQL database. The user-friendly JavaFX interface ensures an intuitive experience, while Hibernate manages efficient database interactions.",
+        tags: [
+            {
+                name: "JavaFx",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Hibernate",
+                color: "green-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: "/pos.jpg",
+        source_code_link: "https://github.com/ArunaluB/PosSystem-Application.git/", 
     },
 ];
