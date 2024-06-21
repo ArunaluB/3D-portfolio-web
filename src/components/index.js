@@ -6,5 +6,6 @@ import Experience from "./Experience";
 import Footer from "./Footer";
 import Feedbacks from "./Feedbacks";
 import Works from "./Works";
+import Contact from "./Contact";
 
-export { Hero, Navbar, StarsCanvas,  Skills, Footer, Experience, Feedbacks, Works};
+export { Hero, Navbar, StarsCanvas,  Skills, Footer, Experience, Feedbacks, Works, Contact };
