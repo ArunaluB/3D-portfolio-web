@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 import React, { Suspense, useRef, useState } from "react";
@@ -70,8 +69,8 @@ const Contact = () => {
 
         emailjs
             .send(
-                process.env.VITE_APP_EMAILJS_SERVICE_ID,
-                process.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
                     from_name: form.name,
                     to_name: "Arunalu Bamunusighe",
@@ -80,7 +79,7 @@ const Contact = () => {
                     message: form.message,
                     html_message: emailContent,
                 },
-                process.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
             )
             .then(
                 () => {
@@ -160,7 +159,7 @@ const Contact = () => {
                             onFocus={handleFocus}
                             onBlur={handleBlur}
                             placeholder="What's your email address?"
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
                             className="bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
