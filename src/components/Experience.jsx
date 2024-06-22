@@ -23,13 +23,13 @@ const ExperienceCard = ({ experience }) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{ background: experience.iconBg }} // Adjusted icon size
       icon={
         <div className='flex justify-center items-center w-full h-full'>
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-[80%] h-[80%] object-contain' // Adjusted logo size
           />
         </div>
       }
@@ -60,7 +60,8 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+
+    <section id="experience" >
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
@@ -80,7 +81,9 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+
+    </section>
+
   );
 };
 

@@ -115,108 +115,112 @@ const Contact = () => {
     };
 
     return (
-        <div className="mt-0 flex xl:flex-row flex-col-reverse gap-5 overflow-hidden">
-            {alert.show && <Alert text={alert.text} type={alert.type} />}
+        <section id="contact" >
+            <div className="mt-0 flex xl:flex-row flex-col-reverse gap-5 overflow-hidden">
+                {alert.show && <Alert text={alert.text} type={alert.type} />}
 
-            <motion.div
-                variants={slideIn("left", "tween", 0.2, 1)}
-                className="flex-[0.6] bg-black-100 p-6 rounded-2xl"
-            >
-                <p className="text-[#dfd9ff] font-medium text-[20px] leading-[30px]">
-                    Get in touch
-                </p>
-                <h3 className="font-black text-white text-[40px] leading-[50px]">
-                    Contact
-                </h3>
-
-                <form
-                    ref={formRef}
-                    onSubmit={handleSubmit}
-                    className="mt-4 flex flex-col gap-4"
+                <motion.div
+                    variants={slideIn("left", "tween", 0.2, 1)}
+                    className="flex-[0.6] bg-black-100 p-6 rounded-2xl"
                 >
-                    <label className="flex flex-col">
-                        <span className="text-white font-medium mb-2">Your Name</span>
-                        <input
-                            required
-                            type="text"
-                            name="name"
-                            value={form.name}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            onBlur={handleBlur}
-                            placeholder="What's your name?"
-                            className="bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-                        />
-                    </label>
-                    <label className="flex flex-col">
-                        <span className="text-white font-medium mb-2">Your email</span>
-                        <input
-                            required
-                            type="email"
-                            name="email"
-                            value={form.email}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            onBlur={handleBlur}
-                            placeholder="What's your email address?"
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
-                            className="bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-                        />
-                    </label>
-                    <label className="flex flex-col">
-                        <span className="text-white font-medium mb-2">Your Message</span>
-                        <textarea
-                            required
-                            rows={5}
-                            name="message"
-                            value={form.message}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            onBlur={handleBlur}
-                            placeholder="What you want to say?"
-                            className="bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-                        />
-                    </label>
+                    <p className="text-[#dfd9ff] font-medium text-[20px] leading-[30px]">
+                        Get in touch
+                    </p>
+                    <h3 className="font-black text-white text-[40px] leading-[50px]">
+                        Contact
+                    </h3>
 
-                    <button
-                        type="submit"
-                        className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[120px]"
+                    <form
+                        ref={formRef}
+                        onSubmit={handleSubmit}
+                        className="mt-4 flex flex-col gap-4"
                     >
-                        {loading ? "Sending..." : "Send"}
-                    </button>
-                </form>
-            </motion.div>
+                        <label className="flex flex-col">
+                            <span className="text-white font-medium mb-2">Your Name</span>
+                            <input
+                                required
+                                type="text"
+                                name="name"
+                                value={form.name}
+                                onChange={handleChange}
+                                onFocus={handleFocus}
+                                onBlur={handleBlur}
+                                placeholder="What's your name?"
+                                className="bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                            />
+                        </label>
+                        <label className="flex flex-col">
+                            <span className="text-white font-medium mb-2">Your email</span>
+                            <input
+                                required
+                                type="email"
+                                name="email"
+                                value={form.email}
+                                onChange={handleChange}
+                                onFocus={handleFocus}
+                                onBlur={handleBlur}
+                                placeholder="What's your email address?"
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+                                className="bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                            />
+                        </label>
+                        <label className="flex flex-col">
+                            <span className="text-white font-medium mb-2">Your Message</span>
+                            <textarea
+                                required
+                                rows={3}
+                                name="message"
+                                value={form.message}
+                                onChange={handleChange}
+                                onFocus={handleFocus}
+                                onBlur={handleBlur}
+                                placeholder="What you want to say?"
+                                className="bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                            />
 
-            <div className='lg:w-1/3 w-full lg:h-auto md:h-[400px] h-[300px]'>
-                <Canvas
-                    camera={{
-                        position: [0, 0, 5],
-                        fov: 75,
-                        near: 0.1,
-                        far: 1000,
-                    }}
-                >
-                    <directionalLight position={[0, 0, 1]} intensity={2.5} />
-                    <ambientLight intensity={1} />
-                    <pointLight position={[5, 10, 0]} intensity={2} />
-                    <spotLight
-                        position={[10, 10, 10]}
-                        angle={0.15}
-                        penumbra={1}
-                        intensity={2}
-                    />
+                        </label>
 
-                    <Suspense fallback={<Loader />}>
-                        <Fox
-                            currentAnimation={currentAnimation}
-                            position={[0.5, 0.35, 0]}
-                            rotation={[12.629, -0.6, 0]}
-                            scale={[0.4, 0.4, 0.4]}
+                        <button
+                            type="submit"
+                            className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[120px]"
+                        >
+                            {loading ? "Sending..." : "Send"}
+                        </button>
+                    </form>
+                </motion.div>
+
+                <div className='lg:w-1/3 w-full lg:h-auto md:h-[400px] h-[300px]'>
+                    <Canvas
+                        camera={{
+                            position: [0, 0, 5],
+                            fov: 75,
+                            near: 0.1,
+                            far: 1000,
+                        }}
+                    >
+                        <directionalLight position={[0, 0, 1]} intensity={2.5} />
+                        <ambientLight intensity={1} />
+                        <pointLight position={[5, 10, 0]} intensity={2} />
+                        <spotLight
+                            position={[10, 10, 10]}
+                            angle={0.15}
+                            penumbra={1}
+                            intensity={2}
                         />
-                    </Suspense>
-                </Canvas>
+
+                        <Suspense fallback={<Loader />}>
+                            <Fox
+                                currentAnimation={currentAnimation}
+                                position={[1, 0.35, 0]} // Adjusted x-coordinate to move Fox to the right
+                                rotation={[12.629, -0.6, 0]}
+                                scale={[0.4, 0.4, 0.4]}
+                            />
+                        </Suspense>
+                    </Canvas>
+                </div>
             </div>
-        </div>
+
+        </section>
     );
 };
 

@@ -259,7 +259,11 @@ export const experiences = [
         iconBg: "#383E56",
         date: "Feb 2024 - Present",
         points: [
-            " ",
+            "Expertise in DevOps development technologies javascript FrameWork MERN,Nextjs,Angular including and Java Spring Boot.",
+            "Working closely with designers, product managers, and other developers to deliver high-quality products.",
+            "Ensuring that web applications are responsive and compatible across different browsers.",
+            "Participating in code reviews and providing constructive feedback to enhance code quality.",
+            " Providing training and mentorship to interns, helping them to develop their skills and knowledge in web development.",
         ],
     },
     {
@@ -269,7 +273,12 @@ export const experiences = [
         iconBg: "#E6DEDD",
         date: "Feb 2024 - May 2024",
         points: [
-            " ",
+            "Developing and maintaining web applications using javascript and other related technologies.",
+            "Collaborating with cross-functional teams, including designers, product managers, and other developers, to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Working on e-commerce platforms and integrating various functionalities as needed.",
+            "Utilizing modern JavaScript frameworks such as NestJS, Angular and Next.js to enhance application performance and scalability.",
         ],
     },
 
@@ -400,6 +409,6 @@ export const projects = [
             },
         ],
         image: "/pos.jpg",
-        source_code_link: "https://github.com/ArunaluB/PosSystem-Application.git/", 
+        source_code_link: "https://github.com/ArunaluB/PosSystem-Application.git/",
     },
 ];
